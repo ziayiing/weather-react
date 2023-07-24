@@ -6,6 +6,7 @@
   color: rgb(135, 135, 135);
 }
 
+
 .Weather h1 {
   font-size: 24px;
   font-weight: 100;
@@ -18,7 +19,7 @@
 }
 
 .Weather li {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   line-height: 19px;
   list-style: none;
@@ -34,17 +35,26 @@
 .Weather .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 48px;
   line-height: 64px;
   font-weight: 400;
   float: left;
 }
 
-.Weather .units {
+.Weather .unit {
   color: rgb(33, 33, 33);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   position: relative;
   height: 1;
-  top: -34px;
+
+}
+
+.Weather .description{
+float: right;
+
+}
+
+.Info {
+  margin-bottom: 30px;
 }

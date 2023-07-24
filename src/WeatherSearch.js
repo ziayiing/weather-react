@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import "bootstrap/dist/css/bootstrap.min.css";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./WeatherSearch.css";
@@ -42,7 +43,7 @@ export default function WeatherSearch(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form onSubmit={handleSubmit}>
+        <form className="search" onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
               <input
@@ -56,8 +57,8 @@ export default function WeatherSearch(props) {
             <div className="col-3">
               <input
                 type="submit"
-                value="search"
-                className="btn btn-primary w-100"
+                value="Search"
+                className="btn btn-primary"
               />
             </div>
           </div>
