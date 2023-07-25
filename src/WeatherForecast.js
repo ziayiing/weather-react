@@ -24,6 +24,7 @@ export default function WeatherForecast(props) {
                 </div>
               );
             }
+            return null
           })}
         </div>
       </div>
@@ -36,6 +37,6 @@ export default function WeatherForecast(props) {
 
     axios.get(apiUrl).then(handleResponse);
 
-    return null;
+    //return null;
   }
 }
